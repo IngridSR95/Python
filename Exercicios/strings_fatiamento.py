@@ -58,3 +58,21 @@ print(nome[2:7])
 print(nome[2:14:2]) #inicio, intervalo e passo
 print(nome[:])
 print(nome[::-1])
+print(" ")
+
+'''STRINGS DE MULTIPLAS LINHAS (TRIPLAS)'''
+mensagem = f"""
+olá meu nome é {nome},
+estou aprendendo {linguagem}
+"""
+print(mensagem)
+print(" ")
+
+#Útil na construção de Menus
+print ("""
+============== MENU ==============
+        1 - Depositar
+        2 - Sacar
+        3 - Sair
+==================================
+       """)
