@@ -48,3 +48,13 @@ print(" ")
 PI = 3.14159
 print(f"Valor de PI: {PI:.2f}") #numero de casas dps do .
 print(f"Valor de PI: {PI:10.2f}")
+
+'''FATIAMENTO DE STRING'''
+nome = "José Maria Silva"
+print(nome[0])
+print(nome[:4])
+print(nome[2:])
+print(nome[2:7])
+print(nome[2:14:2]) #inicio, intervalo e passo
+print(nome[:])
+print(nome[::-1])
