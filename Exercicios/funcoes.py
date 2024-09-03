@@ -44,3 +44,35 @@ def exibir_poema (data_extenso, *args, **kwargs):
     print(mensagem)
     
 exibir_poema ("Dom, 01 set 2024", "Zen of Python", "Beautiful is better than ugly.", autor="Tim Peters", ano=1999)
+
+
+
+'''FUNÇÕES EM PYTHON Parte 2'''
+#Positional Only (valores passados por posição)
+def criar_carrop (modelo, ano, placa, /, marca, motor, combustivel):
+    print(modelo, ano, placa, marca, motor, combustivel)
+
+criar_carrop ("Palio", 1999, "ABC-1234", marca="Fiat", motor="1.0", combustivel="Gasolina") # válido
+'''criar_carro(modelo="Palio", ano=1999, placa="ABC-1234", marca="Fiat", motor="1.0", combustivel="Gasolina") # inválido'''
+
+#Keyword Only (valores passados por nome)
+def criar_carrok (*, modelo, ano, placa, marca, motor, combustivel):
+    print(modelo, ano, placa, marca, motor, combustivel)
+
+criar_carrok (modelo="Palio", ano=1999, placa="ABC-1234", marca="Fiat", motor="1.0", combustivel="Gasolina") # válido
+'''criar_carro("Palio", 1999, "ABC-1234", marca="Fiat", motor="1.0", combustivel="Gasolina") # inválido'''
+
+#Keyword and Positional
+def criar_carro (modelo, ano, placa, /, *, marca, motor, combustivel):
+    print(modelo, ano, placa, marca, motor, combustivel)
+
+criar_carro ("Palio", 1999, "ABC-1234", marca="Fiat", motor="1.0", combustivel="Gasolina") # válido
+'''criar_carro(modelo="Palio", ano=1999, placa="ABC-1234", marca="Fiat", motor="1.0", combustivel="Gasolina") # inválido'''
+
+def salvar_carro(marca, modelo, ano, placa):
+    # salva carro no banco de dados...
+    print(f"Carro inserido com sucesso! {marca}/{modelo}/{ano}/{placa}")
+salvar_carro ("Fiat", "Palio", 1999, "ABC-1234")
+salvar_carro(marca="Fiat", modelo="Palio", ano=1999, placa="ABC-1234")
+salvar_carro(**{"marca": "Fiat", "modelo": "Palio", "ano": 1999, "placa": "ABC- 1234"})
+
