@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assents/CSS/style.css" />
+    <title>Cadastro de Roupas</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-image">
+        <img src="assents/img/undraw_online_shopping_re_k1sv.svg" />
+      </div>
+      <div class="form">
+        <form action="#">
+          <div class="title">
+            <h1>CADASTRO DE ROUPAS</h1>
+          </div>
+          <!--Campos de input-->
+          <div class="input-group">
+            <div class="input-box">
+              <!--Tipo da Peça-->
+              <label for="peca">PEÇA</label>
+              <select id="peca" name="peca">
+                <option value="camiseta">Camiseta</option>
+                <option value="calça">Calça</option>
+                <option value="blusa">Blusa</option>
+                <option value="bermuda">Bermuda</option>
+              </select>
+            </div>
+
+            <div class="input-box">
+              <!--Marca-->
+              <label for="marca">MARCA</label>
+              <input
+                id="marca"
+                type="text"
+                name="marca"
+                placeholder="Digite a marca"
+                required
+              />
+            </div>
+
+            <div class="input-box">
+              <!--Código da peça-->
+              <label for="codigo">CÓDIGO</label>
+              <input
+                id="codigo"
+                type="number"
+                name="codigo"
+                placeholder="Digite o codigo da peça"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <!--Código da peça-->
+              <label for="codigo">DATA DE CADASTRO</label>
+              <input
+                id="data"
+                type="date"
+                name="data"
+                placeholder="Digite o codigo da peça"
+                required
+              />
+            </div>
+
+            <div class="input-box">
+              <!--Quantidade da peça-->
+              <label for="quantidade">QUANTIDADE</label>
+              <input
+                id="quantidade"
+                type="number"
+                name="quantidade"
+                placeholder="Digite as quantidades das peças a serem adicionadas"
+                required
+              />
+            </div>
+
+            <!--Check Box-->
+            <div class="gender-inputs">
+              <div class="gender-title">
+                <h6>GÊNEROS</h6>
+              </div>
+
+              <!--GÊNEROS-->
+              <div class="gender-group">
+                <div class="gender-input">
+                  <input type="radio" id="female" name="gender" />
+                  <label for="female">Feminino</label>
+                </div>
+
+                <div class="gender-input">
+                  <input type="radio" id="male" name="gender" />
+                  <label for="male">Masculino</label>
+                </div>
+
+                <div class="gender-input">
+                  <input type="radio" id="infantil" name="gender" />
+                  <label for="infantil">Infantil</label>
+                </div>
+              </div>
+
+              <!--TAMANHOS-->
+              <div class="tamanho-group">
+                <div class="tamanhos-title">
+                  <h6>TAMANHOS</h6>
+                </div>
+                <div class="tamanho-input">
+                  <input type="radio" id="tg" name="tamanho" />
+                  <label for="tg">G</label>
+                </div>
+
+                <div class="tamanho-input">
+                  <input type="radio" id="tm" name="tamanho" />
+                  <label for="tm">M</label>
+                </div>
+
+                <div class="tamanho-input">
+                  <input type="radio" id="tp" name="tamanho" />
+                  <label for="tp">P</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="continue-button">
+            <button><a href="#">Enviar</a></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
