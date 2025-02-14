@@ -2,7 +2,7 @@
 Minha evolução na linguagem Python
 
 ## 📒 Descrição
-Todos conteúdos e desafios de códigos desenvolvidos durantes as aulas do Bootcamp de Engenharia de Dados - NTT DATA | DIO.
+Todos conteúdos e desafios de códigos desenvolvidos durantes as aulas da plataforma DIO.
 E exercícios e desafios de Python desenvolvidos nos cursos do Coletivo Mirtha Lina - UFABC
 
 ## 🤖 Linguagens Utilizadas
